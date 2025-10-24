@@ -1,0 +1,618 @@
+
+
+
+/* #################################################################################################### */
+/* reset */
+*{
+	margin:0px;
+	padding:0px;
+	font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+	font-weight:400;
+	text-decoration: none;
+}
+
+body{ max-width:1920px; margin:0px auto; }
+img{ display:block; }
+
+tb1{ font-size:inherit; font-weight:inherit; color:#3676eb; }
+tb2{ font-size:inherit; font-weight:inherit; color:#3980fe; }
+tb3{ font-size:inherit; font-weight:inherit; color:#3b7fff; }
+
+.hidden{ display:none; }
+
+
+/* #################################################################################################### */
+/* 1단락 */
+
+.section01_frame{ width:100%; height:100vh; overflow: hidden; }
+.section01_video_wrapper{ width: 100%; height:100%; overflow:hidden; }
+.section01_video_wrapper video{ width: 100%; height:100%; object-fit: cover; object-position: center center; }
+
+
+
+
+
+/* #################################################################################################### */
+/* 2단락 */
+
+.section02_frame{ position:relative; width:100%; background-color:black; overflow:hidden; height:1000px; }
+.section02_video_wrapper{ z-index:100; position:absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; width:2400px; }
+.section02_video_wrapper video{ width:100%; object-fit: cover; object-position: center center; }
+.section02_text_wrapper{ z-index:200; position:absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width:100%; max-width:800px; }
+.section02_text_frame{ margin-top:40px; gap:30px; display:flex; flex-direction: column; align-items: center; justify-content: space-between; }
+.section02_text01{ color:white; font-size:30px; font-weight:700; text-align:center; }
+.section02_text02{ color:white; font-size:64px; font-weight:800; }
+.section02_text03{ color:white; font-size:20px; text-align:center; }
+
+@media screen and (max-width: 1400px) {
+	.section02_video_wrapper{ width:1600px; }
+	.section02_frame{ height:750px; }
+}
+@media screen and (max-width: 1000px) {
+	.section02_video_wrapper{ width:1200px; }
+	.section02_text01{ font-size:22px; font-weight:700; }
+	.section02_text02{ font-size:52px; font-weight:800; }
+	.section02_text03{ font-size:18px;  }
+}
+@media screen and (max-width: 770px) {
+	.section02_frame{ height:500px; }
+	.section02_video_wrapper{ width:800px; }
+	.section02_text_frame{ margin-top:40px; gap:30px; }
+	.section02_text01{ font-size:20px; font-weight:700; }
+	.section02_text02{ font-size:36px; font-weight:800; }
+	.section02_text03{ font-size:18px;  }
+}
+@media screen and (max-width: 500px) {
+	.section02_frame{ height:700px; }
+	.section02_video_wrapper{ width:550px; }
+	.section02_text_frame{ gap:80px; }
+	.section02_text01{ font-size:20px; font-weight:700; }
+	.section02_text02{ font-size:36px; font-weight:800; }
+	.section02_text03{ font-size:18px;  }
+}
+
+
+
+
+
+/* #################################################################################################### */
+/* 3단락 */
+
+.section03_frame{ width:100%; background-color:black; }
+.section03_up{ display:flex; flex-direction: column; align-items: center; gap:30px; padding:50px 0px 100px; }
+.section03_text{ text-align:center; color:white; font-size:42px; font-weight:800; }
+.section03_img{ width:950px; }
+.section03_img img{ width:100%; }
+
+.section03_down{ display:flex; flex-direction: column; align-items: center; gap:20px; padding:30px 0px 100px; }
+.section03_down_t1{ font-size:42px; color:#397FFE; font-weight:800; }
+.section03_down_t2{ font-size:32px; color:#397FFE; font-weight:500; }
+.section03_down_bar{ background-color:white; width:100px; height:3px; margin:15px 0px; }
+.section03_down_t3{ font-size:20px; font-weight:400; color:white; text-align:center; }
+.section03_down_t4{ font-size:20px; font-weight:600; color:white; }
+
+@media screen and (max-width: 1000px) {
+	.section03_img{ width:95%; }
+}
+@media screen and (max-width: 800px) {
+	.section03_text{ font-size:30px; }
+
+	.section03_down_t1{ font-size:32px; }
+	.section03_down_t2{ font-size:26px; }
+	.section03_down_t3{ font-size:18px; }
+	.section03_down_t4{ font-size:18px; }
+}
+@media screen and (max-width: 600px) {
+	.section03_down_t1{ font-size:26px; }
+	.section03_down_t2{ font-size:20px; }
+	.section03_down_t3{ font-size:14px; }
+	.section03_down_t4{ font-size:16px; }
+}
+@media screen and (max-width: 400px) {
+	.section03_down_t1{ font-size:22px; }
+	.section03_down_t2{ font-size:17px; }
+	.section03_down_t3{ font-size:12px; }
+	.section03_down_t4{ font-size:14px; }
+}
+
+
+
+
+
+/* #################################################################################################### */
+/* 4단락 */
+
+.section04_frame{ position:relative; width:100%; overflow:hidden; height:800px; }
+.section04_video_wrapper{ z-index:100; position:relative; left: 50%; transform: translate(-50%, -10%); text-align: center; width:2000px; }
+.section04_video_wrapper video{ width:100%; object-fit: cover; object-position: center center; }
+.section04_text_wrapper{ z-index:200; position:absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width:100%; max-width:800px; display:flex; flex-direction: column; align-items: center; justify-content: space-between; }
+.section04_text1{ color:white; font-size:56px; font-weight:800; }
+.section04_text2{ color:white; font-size:42px; font-weight:600; }
+
+@media screen and (max-width: 1400px) {
+	.section04_frame{ height:700px; }
+	.section04_video_wrapper{ width:1500px; }
+}
+@media screen and (max-width: 1000px) {
+	.section04_frame{ height:480px; }
+	.section04_video_wrapper{ transform: translate(-50%, -15%); width:1100px; }
+	.section04_text1{ font-size:48px; }
+	.section04_text2{ font-size:36px; }
+}
+@media screen and (max-width: 800px) {
+	.section04_text1{ font-size:40px; }
+	.section04_text2{ font-size:32px; }
+}
+@media screen and (max-width: 500px) {
+	.section04_frame{ height:400px; }
+	.section04_video_wrapper{ transform: translate(-50%, -5%); width:850px; }
+	.section04_text1{ font-size:28px; }
+	.section04_text2{ font-size:24px; }
+}
+
+
+
+/* #################################################################################################### */
+/* 5단락 */
+
+
+.section05_frame{ width:100%; background-color:black; padding:160px 0px; }
+.section05_up{ width:95%; max-width:1140px; margin:0px auto; display:flex; justify-content: space-between; align-items: flex-end; }
+.section05_left{ display:flex; flex-direction: column; }
+.section05_lt1{ font-size:42px; font-weight:800; color:white;  }
+.section05_lt2{ font-size:16px; font-weight:400; color:#397FFE; margin:12px 0px 57px; }
+.section05_lt3{ font-size:20px; font-weight:400; color:white; margin-bottom:30px;  }
+.section05_right{ display:flex; flex-direction: column; width:41%; }
+.section05_rt1{ font-size:20px; font-weight:400; color:white; }
+.section05_rt2{ font-size:92px; font-weight:800; color:white; }
+
+.section05_down{ width:95%; margin:0px auto; max-width:1140px; margin-top:50px; display:flex; justify-content: space-between; }
+.section05_down_block{ width:24%; height:210px; display:flex; flex-direction: column; background-color:#1b212d; transition:0.3s; }
+.section05_down_block:hover{ background-color:#2546c1; }
+.section05_block_img{ margin:40px 20px; }
+.section05_block_img img{ height:40px; }
+.section05_block_texts{ margin-left:20px; display:flex; flex-direction: column; }
+.section05_block_text1{ font-size:19px; font-weight:600; color:white; margin-bottom:10px; }
+.section05_block_text2{ font-size:15px; font-weight:400; color:white; }
+
+@media screen and (max-width: 1000px) {
+	.section05_lt1{ font-size:36px; }
+	.section05_lt2{ font-size:15px; margin:10px 0px 35px; }
+	.section05_lt3{ font-size:18px; margin-bottom:30px;  }
+	.section05_right{ width:35%; }
+	.section05_rt1{ font-size:18px; }
+	.section05_rt2{ font-size:72px; }
+
+	.section05_down{ flex-wrap: wrap; row-gap:20px; }
+	.section05_down_block{ width:49%; }
+}
+@media screen and (max-width: 800px) {
+	.section05_up{ margin:0px auto; display:flex; flex-direction: column; justify-content: space-between; align-items: center; }
+	.section05_left{ display:flex; flex-direction: column; align-items: center; }
+	.section05_lt1{ font-size:38px; }
+	.section05_lt2{ font-size:16px; margin:12px 0px 45px; }
+	.section05_lt3{ font-size:20px; margin-bottom:50px;  }
+	.section05_right{ display:flex; flex-direction: column; align-items: center; width:90%; }
+	.section05_rt1{ font-size:20px; }
+	.section05_rt2{ font-size:80px; }
+	
+	.section05_down{ row-gap:15px; }
+}
+@media screen and (max-width: 550px) {
+	.section05_lt1{ font-size:28px; }
+	.section05_lt2{ font-size:14px; }
+	.section05_lt3{ font-size:16px; margin-bottom:40px;  }
+	.section05_rt1{ font-size:18px; }
+	.section05_rt2{ font-size:52px; }
+
+	.section05_down{ width:90%; margin:30px auto 0px; display:flex; flex-direction: column; }
+	.section05_down_block{ width:100%; flex-direction: row; height:unset; border-radius:15px; }
+	.section05_block_img{ margin:16px; width:90px; }
+	.section05_block_img img{ margin:0px auto; }
+	.section05_block_texts{ justify-content: center; }
+}
+@media screen and (max-width: 410px) {
+	.section05_lt1{ font-size:22px; }
+	.section05_lt2{ font-size:14px; margin:10px 0px 30px; }
+	.section05_lt3{ font-size:14px; margin-bottom:30px;  }
+	.section05_rt1{ font-size:16px; }
+	.section05_rt2{ font-size:32px; }
+
+	.section05_down{ width:90%; margin:30px auto 0px; display:flex; flex-direction: column; }
+	.section05_down_block{ border-radius:10px; }
+	.section05_block_img{ margin:10px; width:67px; height:30px; }
+	.section05_block_img img{ margin:0px auto; height:100%; }
+	.section05_block_text1{ font-size:14px; margin-bottom:8px; }
+	.section05_block_text2{ font-size:12px; }
+}
+
+
+
+/* #################################################################################################### */
+/* 6단락 */
+
+.section06_frame{ position:relative; width:100%; overflow:hidden; height:800px; }
+.section06_video_wrapper{ z-index:100; position:relative; left: 50%; transform: translate(-50%, -20%); text-align: center; width:2300px; }
+.section06_video_wrapper video{ width:100%; object-fit: cover; object-position: center center; }
+
+.section06_dim{ z-index:150; width:120%; height:120%; position:absolute; top:-5%; left:-5%; background-color:#00000080; }
+
+.section06_text_wrapper{ z-index:200; position:absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width:100%; max-width:800px; display:flex; flex-direction: column; align-items: center; justify-content: space-between; }
+.section06_text1{ color:white; font-size:64px; font-weight:600; text-align:center; line-height:150%; }
+.section06_text2{ color:white; font-size:48px; font-weight:800; text-align:center; margin:50px 0px 70px; }
+.section06_text3{ color:white; font-size:20px; font-weight:600; text-align:center; line-height:130%; }
+.section06_br{display:none;}
+
+@media screen and (max-width: 1400px) {
+	.section06_frame{ height:700px; }
+	.section06_video_wrapper{ transform: translate(-50%, -10%); width:1600px; }
+}
+@media screen and (max-width: 1000px) {
+	.section06_frame{ height:650px; }
+	.section06_video_wrapper{ transform: translate(-50%, 0%); width:1200px; }
+
+	.section06_text1{ font-size:50px; line-height:150%; }
+	.section06_text2{ font-size:36px; margin:50px 0px 70px; }
+	.section06_text3{ font-size:18px; line-height:130%; }
+}
+
+@media screen and (max-width: 800px) {
+	.section06_frame{ height:450px; }
+	.section06_video_wrapper{ transform: translate(-50%, 0%); width:850px; }
+
+	.section06_text1{ font-size:44px; line-height:150%; }
+	.section06_text2{ font-size:28px; margin:30px 0px 50px; }
+	.section06_text3{ font-size:16px; line-height:130%; }
+	.section06_br{display:unset;}
+}
+@media screen and (max-width: 550px) {
+	.section06_frame{ height:450px; }
+	.section06_video_wrapper{ width:850px; }
+
+	.section06_text1{ font-size:32px; line-height:150%; }
+	.section06_text2{ font-size:24px; margin:30px 0px 50px; }
+	.section06_text3{ font-size:14px; line-height:130%; }
+	.section06_br{display:unset;}
+}
+@media screen and (max-width: 410px) {
+	.section06_frame{ height:500px; }
+	.section06_video_wrapper{ width:900px; }
+
+	.section06_text1{ font-size:26px; line-height:150%; }
+	.section06_text2{ font-size:18px; margin:30px 0px 50px; }
+	.section06_text3{ font-size:13px; line-height:130%; }
+}
+
+
+
+
+
+/* #################################################################################################### */
+/* 7단락 */
+
+.section07_frame{ width:100%; background-color:black; position:relative; }
+.section07_text{ position:relative; width:90%; max-width:1140px; padding:250px 0px 50px; margin:0px auto; color:#3B7FFF; font-size:64px; font-weight:800; }
+.section07_cube1{ position:absolute; width:250px; top:200px; right:16%; }
+.section07_cube2{ position:absolute; width:150px; top:360px; right:35%; }
+.section07 video{ width:100%; }
+
+@media screen and (max-width: 1400px) {
+	.section07_cube1{ width:220px; right:12%; }
+	.section07_cube2{ width:120px; right:30%; }
+}
+@media screen and (max-width: 1000px) {
+	.section07_text{ padding:200px 0px 30px; font-size:52px; text-align:center;  }
+	.section07_cube1{ display:none; }
+	.section07_cube2{ display:none; }
+}
+@media screen and (max-width: 700px) {
+	.section07_text{ padding:180px 0px 20px; font-size:36px; }
+}
+@media screen and (max-width: 450px) {
+	.section07_text{ padding:150px 0px 20px; font-size:32px; }
+}
+
+
+
+
+
+/* #################################################################################################### */
+/* 8단락 */
+
+.section08_frame{ width:100%; background-color:black; }
+.section08_a_inner{ margin:0px auto; padding:45px 0px; width:90%; max-width:1140px; display:flex; align-items: center; justify-content: space-between; }
+.section08_a_img{ width:400px; }
+.section08_a_img img{ width:100%; }
+.section08_a_info{ display:flex; flex-direction: column; width:60%; }
+.section08_a_title{ display:flex; justify-content: space-between; }
+.section08_a_t1{ color:white; font-size:40px; font-weight:600; }
+.section08_a_t2{ color:white; font-size:38px; font-weight:600; }
+.section08_a_bar{ width:100%; height:2px; background-color:white; margin:20px 0px 30px; }
+.section08_a_text{ color:white; font-size:18px; }
+.section08_b_title{ color:#3B7FFF; font-size:64px; font-weight:800; width:90%; max-width:1140px; margin:50px auto; }
+.section08_b_inner{ width:90%; max-width:1140px; margin:0px auto; padding-bottom:200px; }
+.section08_b_group{ display:flex; flex-wrap: wrap; justify-content: center; gap:40px; }
+.section08 .section08_b_hframe:nth-of-type(1) { padding-left:45px; }
+.section08 .section08_b_hframe:nth-of-type(4) { padding-right:45px; }
+.section08_b_himg{ width:180px; }
+.section08_b_himg img{ width:100%; }
+.section08_b_htext{ color:white; font-size:28px; font-weight:800; line-height:90%; margin-top:15px; }
+s8t{ color:white; font-size:17px; font-weight:500; }
+
+@media screen and (max-width: 1200px) {
+	.section08_a_inner{ padding:35px 0px; }
+	.section08_a_img{ width:300px; }
+	.section08_a_t1{ font-size:32px; }
+	.section08_a_t2{ font-size:30px; }
+	.section08_a_bar{ margin:18px 0px 26px; }
+	.section08_a_text{ font-size:18px; }
+	
+	.section08_b_title{ text-align:center; }
+	.section08_b_inner{ width:700px; }
+	.section08_b_group{ gap:40px; }
+	.section08 .section08_b_hframe:nth-of-type(1) { padding-left:0px; }
+	.section08 .section08_b_hframe:nth-of-type(4) { padding-right:0px; }
+}
+@media screen and (max-width: 1000px) {
+	.section08_a_inner{ padding:30px 0px; }
+	.section08_a_img{ width:250px; }
+	.section08_a_info{ width:60%; }
+	.section08_a_t1{ font-size:26px; }
+	.section08_a_t2{ font-size:22px; }
+	.section08_a_bar{ margin:16px 0px 24px; }
+	.section08_a_text{ font-size:15px; }
+	
+	.section08_b_title{ font-size:48px; margin:35px auto; }
+}
+@media screen and (max-width: 800px) {
+	.section08_a_inner{ flex-direction: column; }
+	.section08_a_img{ margin-bottom:20px; }
+	.section08_a_info{ width:80%; }
+	
+	.section08_b_inner{ width:460px; }
+	.section08_b_group{ gap:30px; }
+	.section08_b_title{ font-size:34px; }
+	.section08_b_himg{ width:130px; }
+	.section08_b_htext{ font-size:22px; }
+	s8t{ font-size:14px; }
+}
+@media screen and (max-width: 550px) {
+	.section08_a_img{ width:220px; }
+	.section08_a_info{ width:100%; }
+	.section08_a_t1{ font-size:22px; }
+	.section08_a_t2{ font-size:20px; }
+	.section08_a_bar{ margin:14px 0px 20px; }
+	.section08_a_text{ font-size:14px; }
+
+	.section08_b_title{ font-size:28px; margin:20px auto; }
+	.section08_b_inner{ width:315px; }
+	.section08_b_group{ gap:20px; }
+	.section08_b_himg{ width:90px; }
+	.section08_b_htext{ font-size:16px; }
+	s8t{ font-size:12px; }
+}
+@media screen and (max-width: 400px) {
+	.section08_a_t1{ display:none; }
+	.section08_b_group{ gap:10px; }
+}
+
+
+
+
+
+/* #################################################################################################### */
+/* 9단락 */
+
+.section09_frame{ width:100%; background-attachment: fixed; background-size: cover; background-position: center; }
+.section09_inner{ display:flex; flex-direction: column; width:90%; max-width:750px; margin:0px auto; padding:200px 0px; }
+.section09_title{ position:relative; margin:0px 0px 120px; }
+.section09_circle{ z-index:100; position:absolute; top:-100px; left:-50px; background:linear-gradient(#081846, #1B4DA0, #402D8D); border-radius:100%; width:300px; height:300px; opacity:0.5; }
+.section09_title_text{ z-index:200; position:relative; font-size:42px; font-weight:800; color:white; line-height:90%; margin-left:70px; }
+.section09_insight{ display:flex; flex-direction: column; gap:20px; }
+.section09_box{ background-color:#17264094; border-radius:20px; display:flex; flex-direction: column; padding:30px 0px 30px 50px; }
+.section09_box_t1{ font-size:20px; font-weight:600; color:white; margin-bottom:15px; }
+.section09_box_t2{ font-size:32px; font-weight:600; color:white; }
+.section09_box br{ display:none; }
+
+@media screen and (max-width: 1200px) {
+	.section09_circle{ top:-70px; left:-50px; width:250px; height:250px; }
+	.section09_title_text{ font-size:38px; margin-left:50px; }
+	.section09_insight{ gap:16px; }
+	.section09_box{ border-radius:16px; padding:26px 0px 26px 40px; }
+	.section09_box_t1{ font-size:18px; margin-bottom:12px; }
+	.section09_box_t2{ font-size:28px; }
+}
+@media screen and (max-width: 800px) {
+	.section09_circle{ top:-60px; left:-50px; width:200px; height:200px; }
+	.section09_title_text{ font-size:32px; margin-left:40px; }
+	.section09_insight{ gap:16px; }
+	.section09_box{ border-radius:16px; padding:22px 0px 22px 35px; }
+	.section09_box_t1{ font-size:18px; margin-bottom:12px; }
+	.section09_box_t2{ font-size:24px; }
+}
+@media screen and (max-width: 550px) {
+	.section09_title{ margin:0px 0px 80px; }
+	.section09_circle{ top:-70px; left:-50px; width:200px; height:200px; }
+	.section09_title_text{ font-size:24px; margin-left:40px; }
+	.section09_insight{ gap:16px; }
+	.section09_box{ border-radius:16px; padding:20px 0px 20px 30px; }
+	.section09_box_t1{ font-size:14px; margin-bottom:10px; }
+	.section09_box_t2{ font-size:20px; }
+}
+@media screen and (max-width: 460px) {
+	.section09_box br{ display:block; }
+}
+
+
+
+
+
+/* #################################################################################################### */
+/* 10단락 */
+
+.section10_frame{ background-color:black; width:100%; padding:150px 0px; }
+.section10_text{ font-size:64px; font-weight:800; color:white; text-align:center; }
+#sec10_c1{ font-size:inherit; font-weight:inherit; color:inherit; transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; }
+#sec10_c2{ font-size:inherit; font-weight:inherit; color:inherit; transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; }
+.section10_video{ margin:50px auto; width:750px; }
+.section10_video video{ width:100%; }
+.section10_button{
+	background-color:#3B7FFF; width:400px; text-align:center; margin:0px auto; padding:30px 0px;
+	font-size:24px; font-weight:800; color:white;
+	border-radius:40px; box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.5); border-color: #FFFFFF1C; border-style: solid; }
+.section10_buttontext{ color:white; font-size:24px; font-weight:600; margin-top:10px; text-align:center; }
+
+
+@media screen and (max-width: 1000px) {
+	.section10_text{ font-size:52px; }
+	.section10_video{ margin:50px auto; width:75%; }
+	.section10_button{ width:300px; padding:20px 0px; font-size:20px; border-radius:40px; box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.5); }
+	.section10_buttontext{ font-size:20px; margin-top:10px; }
+}
+@media screen and (max-width: 550px) {
+	.section10_text{ font-size:36px; }
+	.section10_video{ margin:40px auto; width:85%; }
+	.section10_button{ width:240px; padding:16px 0px; font-size:16px; border-radius:34px; }
+	.section10_buttontext{ font-size:16px; margin-top:10px; }
+}
+@media screen and (max-width: 400px) {
+	.section10_text{ font-size:28px; }
+	.section10_video{ margin:30px auto; width:90%; }
+}
+
+
+
+
+
+/* #################################################################################################### */
+/* 11단락 */
+
+.section11_frame{ background-color:black; width:100%; padding:50px 0px 100px; }
+.section11_inner{ display:flex; flex-direction: column; align-items: center; }
+.section11_title{ font-size:84px; font-weight:800; color:white; }
+.section11_text{ font-size:18px; font-weight:500; color:white; margin:30px 0px; text-align:center; }
+.section11_set{ display:flex; gap:20px; margin:10px 0px; }
+.section11_lucky{ width:270px; }
+.section11_lucky img{ width:100%; }
+.section11_name{ font-size:24px; font-weight:600; color:white; text-align:center; margin-top:20px; }
+.section11_mini{ font-size:17px; font-weight:500; color:white; width:700px; text-align:right; }
+
+@media screen and (max-width: 950px) {
+	.section11_title{ font-size:72px; }
+	.section11_text{ font-size:16px; margin:28px 0px; }
+	.section11_set{ gap:1.5%; margin:8px 0px; }
+	.section11_lucky{ width:calc(88vw / 3); }
+	.section11_name{ font-size:20px; margin-top:15px; }
+	.section11_mini{ font-size:16px; width:68%; margin-top:15px; }
+}
+@media screen and (max-width: 600px) {
+	.section11_title{ font-size:54px; }
+	.section11_text{ font-size:14px; margin:24px 0px; }
+	.section11_name{ font-size:18px; margin-top:15px; }
+	.section11_mini{ font-size:14px; }
+}
+@media screen and (max-width: 450px) {
+	.section11_frame{ padding:30px 0px 70px; }
+	.section11_title{ font-size:36px; }
+	.section11_text{ font-size:12px; margin:20px 0px; }
+	.section11_name{ font-size:14px; margin-top:10px; }
+	.section11_mini{ font-size:12px; }
+}
+
+
+
+
+
+/* #################################################################################################### */
+/* 12단락 */
+
+.section12_frame{ background-color:black; width:100%; }
+.section12_img{ width:900px; margin:0px auto; }
+.section12_img img{ width:100%; }
+
+@media screen and (max-width: 950px) {
+	.section12_img{ width:94%; }
+}
+
+
+
+
+
+/* #################################################################################################### */
+/* 13단락 */
+
+.section13_frame{ background-color:black; width:100%; padding:50px 0px; }
+.section13_header{ display:flex; flex-direction: column; align-items: center; }
+.section13_title{ font-size:84px; font-weight:800; color:white; }
+.section13_text{ font-size:18px; font-weight:500; color:white; margin:10px 0px 40px; }
+.section13_acc{ width:700px; margin:0px auto; }
+.section13_acc_line{ width:100%; height:2px; background-color:white; margin-bottom:10px; }
+.section13_acc_q{ position:relative; z-index:200; padding:20px 30px; border:1px solid #313131; border-radius:10px; margin:15px 0px 5px; display:flex; justify-content: space-between; align-items: center; cursor:pointer; }
+.section13_acc_qt{ font-size:24px; font-weight:600; color:white; }
+.section13_acc_qi1{ width:22px; }
+.section13_acc_qi1 .icon{ width:100%; fill:white; }
+.section13_acc_qi2{ width:22px; }
+.section13_acc_qi2 .icon{ width:100%; fill:white; }
+.section13_acc_a{ position:relative; z-index:100; font-size:24px; font-weight:600; color:white; background-color:#3b7fff; padding:20px 30px; border-radius:10px; margin:10px 0px; transition:0.3s; }
+.section13_fold{ height:0px!important; padding:0px 30px; opacity:0!important; margin:0px!important; }
+
+@media screen and (max-width: 1000px) {
+	.section13_title{ font-size:68px; }
+	.section13_text{ font-size:16px; margin:10px 0px 30px; }
+	.section13_acc{ width:85%; }
+	.section13_acc_q{ padding:15px 25px; }
+	.section13_acc_qt{ font-size:18px; }
+	.section13_acc_a{ font-size:18px; padding:15px 25px; margin:10px 0px; }
+	.section13_fold{ padding:0px 25px; }
+}
+@media screen and (max-width: 600px) {
+	.section13_title{ font-size:48px; }
+	.section13_text{ font-size:15px; margin:8px 0px 24px; }
+	.section13_acc{ width:90%; }
+	.section13_acc_q{ padding:12px 22px; }
+	.section13_acc_qt{ font-size:14px; }
+	.section13_acc_qi1{ width:18px; margin-left:10px; }
+	.section13_acc_qi2{ width:18px; margin-left:10px; }
+	.section13_acc_a{ font-size:14px; padding:12px 22px; margin:10px 0px; }
+	.section13_fold{ padding:0px 22px; }
+}
+@media screen and (max-width: 450px) {
+	.section13_title{ font-size:32px; }
+	.section13_text{ font-size:14px; }
+}
+
+
+
+
+
+/* #################################################################################################### */
+/* 14단락 */
+
+.section14_frame{ background-color:black; width:100%; padding:150px 0px; }
+.section14_inner{ width:1140px; margin:0px auto; }
+.section14_title{ font-size:64px; font-weight:700; color:white; text-align:center; }
+.section14_text{ font-size:20px; font-weight:700; color:white; text-align:center; margin-top:20px; }
+
+@media screen and (max-width: 1200px) {
+	.section14_inner{ width:90%; }
+
+}
+@media screen and (max-width: 500px) {
+	.section14_title{ font-size:48px; }
+	.section14_text{ font-size:16px; }
+}
+
+/* #################################################################################################### */
+/* footer단락 */
+
+.footer_frame{ background-color:black; width:100%; }
+.footer_inner{ width:1140px; margin:0px auto; }
+.footer_line{ background-color:white; width:100%; height:2px; }
+.footer_texts{ font-size:15px; color:#aaaaaa; padding:40px 0px 100px; }
+
+@media screen and (max-width: 1200px) {
+	.footer_inner{ width:90%; }
+}
+@media screen and (max-width: 500px) {
+	.footer_texts{ font-size:14px;  padding:30px 0px 70px; }
+}
