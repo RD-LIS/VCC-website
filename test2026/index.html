@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -12,7 +11,7 @@
     
     
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
-    <link rel="stylesheet" href="/test2026/static/style.css">
+    <link rel="stylesheet" href="https://richdivine-vcc.com/test2026/static/style.css?v10">
 
 </head>
 <body>
@@ -20,13 +19,60 @@
 
 
 
-<div style="width:100%; background-color:black; padding:200px 100px; height:1000px;">
-    <p style="color:white; font-size:24px;">sec01 스크롤 영상</p>
+
+
+<!-- sec00 화면 전체 fixed. -->
+
+<div class="sec00_buttons">
+    <a class="sec00_button1" href="https://www.naver.com">신청<br>하기</a>
+    <a class="sec00_button2" href="https://www.naver.com">문의<br>하기</a>
 </div>
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<!-- sec01 스크롤영상 -->
+<div class="sec01">
+    <div class="sec01_frame">
+
+        <div class="sec01_sticky">
+            <div class="sec01_videos">
+                <video id="sec01_video" playsinline muted preload="auto"></video>
+            </div>
+            
+            <div class="sec01_contents">
+                <p style="color:white; font-size:20px; font-weight:700;">영상 위에 존재하는 텍스트예시</p>
+                <p style="color:black; font-size:20px; font-weight:700;">영상 위에 존재하는 텍스트예시</p>
+                <p style="color:grey; font-size:20px; font-weight:700;">영상 위에 존재하는 텍스트예시</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
 
 <div style="width:100%; background-color:black; padding:200px 100px; height:1000px;">
     <p style="color:white; font-size:24px;">sec02 3카드</p>
 </div>
+
+
+
 
 
 
@@ -51,17 +97,17 @@
                    loop 
                    playsinline
                    
-                   data-poster-1="/test2026/static/poster_1.jpg"
-                   data-webm-1="/test2026/static/video_1.webm"
-                   data-mp4-1="/test2026/static/sec03_vid.mp4"
+                   data-poster-1="https://richdivine-vcc.com/test2026/static/poster_1.jpg"
+                   data-webm-1="https://richdivine-vcc.com/test2026/static/video_1.webm"
+                   data-mp4-1="https://richdivine-vcc.com/test2026/static/sec03_vid.mp4"
                    
-                   data-poster-2="/test2026/static/poster_2.jpg"
-                   data-webm-2="/test2026/static/video_2.webm"
-                   data-mp4-2="/test2026/static/sec03_vid.mp4"
+                   data-poster-2="https://richdivine-vcc.com/test2026/static/poster_2.jpg"
+                   data-webm-2="https://richdivine-vcc.com/test2026/static/video_2.webm"
+                   data-mp4-2="https://richdivine-vcc.com/test2026/static/sec03_vid.mp4"
 
-                   data-poster-3="/test2026/static/poster_3.jpg"
-                   data-webm-3="/test2026/static/video_3.webm"
-                   data-mp4-3="/test2026/static/sec03_vid.mp4"
+                   data-poster-3="https://richdivine-vcc.com/test2026/static/poster_3.jpg"
+                   data-webm-3="https://richdivine-vcc.com/test2026/static/video_3.webm"
+                   data-mp4-3="https://richdivine-vcc.com/test2026/static/sec03_vid.mp4"
 
             </video>
         </div>
@@ -88,17 +134,17 @@
                    loop 
                    playsinline
                    
-                   data-poster-1="/test2026/static/poster_1.jpg"
-                   data-webm-1="/test2026/static/video_1.webm"
-                   data-mp4-1="/test2026/static/sec04_vid.mp4"
+                   data-poster-1="https://richdivine-vcc.com/test2026/static/poster_1.jpg"
+                   data-webm-1="https://richdivine-vcc.com/test2026/static/video_1.webm"
+                   data-mp4-1="https://richdivine-vcc.com/test2026/static/sec04_vid.mp4"
                    
-                   data-poster-2="/test2026/static/poster_2.jpg"
-                   data-webm-2="/test2026/static/video_2.webm"
-                   data-mp4-2="/test2026/static/sec04_vid.mp4"
+                   data-poster-2="https://richdivine-vcc.com/test2026/static/poster_2.jpg"
+                   data-webm-2="https://richdivine-vcc.com/test2026/static/video_2.webm"
+                   data-mp4-2="https://richdivine-vcc.com/test2026/static/sec04_vid.mp4"
 
-                   data-poster-3="/test2026/static/poster_3.jpg"
-                   data-webm-3="/test2026/static/video_3.webm"
-                   data-mp4-3="/test2026/static/sec04_vid.mp4"
+                   data-poster-3="https://richdivine-vcc.com/test2026/static/poster_3.jpg"
+                   data-webm-3="https://richdivine-vcc.com/test2026/static/video_3.webm"
+                   data-mp4-3="https://richdivine-vcc.com/test2026/static/sec04_vid.mp4"
 
             </video>
         </div>
@@ -123,7 +169,7 @@
 <div class="sec05">
     <div class="sec05_frame">
         <div class="sec05_img">
-            <img id="sec05_img1" src="/test2026/static/sec05_img1.png">
+            <img id="sec05_img1" src="https://richdivine-vcc.com/test2026/static/sec05_img1.png">
             <img id="sec05_img2" src="">
             <img id="sec05_img3" src="">
             <img id="sec05_img4" src="">
@@ -159,21 +205,21 @@
                    loop 
                    playsinline
                    
-                   data-poster-1="/test2026/static/poster_1.jpg"
-                   data-webm-1="/test2026/static/video_1.webm"
-                   data-mp4-1="/test2026/static/video_1.mp4"
+                   data-poster-1="https://richdivine-vcc.com/test2026/static/poster_1.jpg"
+                   data-webm-1="https://richdivine-vcc.com/test2026/static/video_1.webm"
+                   data-mp4-1="https://richdivine-vcc.com/test2026/static/video_1.mp4"
                    
-                   data-poster-2="/test2026/static/poster_2.jpg"
-                   data-webm-2="/test2026/static/video_2.webm"
-                   data-mp4-2="/test2026/static/video_2.mp4"
+                   data-poster-2="https://richdivine-vcc.com/test2026/static/poster_2.jpg"
+                   data-webm-2="https://richdivine-vcc.com/test2026/static/video_2.webm"
+                   data-mp4-2="https://richdivine-vcc.com/test2026/static/video_2.mp4"
 
-                   data-poster-3="/test2026/static/poster_3.jpg"
-                   data-webm-3="/test2026/static/video_3.webm"
-                   data-mp4-3="/test2026/static/video_3.mp4"
+                   data-poster-3="https://richdivine-vcc.com/test2026/static/poster_3.jpg"
+                   data-webm-3="https://richdivine-vcc.com/test2026/static/video_3.webm"
+                   data-mp4-3="https://richdivine-vcc.com/test2026/static/video_3.mp4"
 
-                   data-poster-4="/test2026/static/poster_4.jpg"
-                   data-webm-4="/test2026/static/video_4.webm"
-                   data-mp4-4="/test2026/static/video_4.mp4">
+                   data-poster-4="https://richdivine-vcc.com/test2026/static/poster_4.jpg"
+                   data-webm-4="https://richdivine-vcc.com/test2026/static/video_4.webm"
+                   data-mp4-4="https://richdivine-vcc.com/test2026/static/video_4.mp4">
             </video>
         </div>
     
@@ -188,6 +234,8 @@
 
 
 
+
+
 <!-- sec06 VCC 소개 -->
 
 <div class="sec06">
@@ -197,28 +245,28 @@
             <p class="sec06_t2">전문직 맞춤 AI, 마케팅, 금융의 컨버전스</p>
         </div>
     
-        <div class="sec06_p1" style="background-image: url('/test2026/static/sec06_back1.png');">
+        <div class="sec06_p1" style="background-image: url('https://richdivine-vcc.com/test2026/static/sec06_back1.png');">
             <div class="sec06_pt">
                 <p class="sec06_pt1">AI가 바꾸는 자산의 법칙</p>
                 <p class="sec06_pt2">가장 중요한 세 가지 투자 트렌드는 대격변의 시기를 맞이 하였습니다.<br>먼저 아는 전문가만이 선점합니다.</p>
             </div>
             <div class="sec06_p1_group">
                 <div class="sec06_p1_item">
-                    <img src="/test2026/static/sec06_p1_icon1.png">
+                    <img src="https://richdivine-vcc.com/test2026/static/sec06_p1_icon1.png">
                     <div class="sec06_p1_texts sec06_p1_texts_line">
                         <p class="sec06_p1_t1">AI 가치관과 <br class="sec06_p1br">시장 방향성</p>
                         <p class="sec06_p1_t2">가장 중요한 세 가지 투자 트렌드는 대격변의 시기를 맞이 하였습니다. 먼저 아는 전문가만이 선점합니다.</p>
                     </div>
                 </div>
                 <div class="sec06_p1_item">
-                    <img src="/test2026/static/sec06_p1_icon2.png">
+                    <img src="https://richdivine-vcc.com/test2026/static/sec06_p1_icon2.png">
                     <div class="sec06_p1_texts sec06_p1_texts_line">
                         <p class="sec06_p1_t1">AI 가치관과 <br class="sec06_p1br">시장 방향성</p>
                         <p class="sec06_p1_t2">가장 중요한 세 가지 투자 트렌드는 대격변의 시기를 맞이 하였습니다. 먼저 아는 전문가만이 선점합니다.</p>
                     </div>
                 </div>
                 <div class="sec06_p1_item">
-                    <img src="/test2026/static/sec06_p1_icon3.png">
+                    <img src="https://richdivine-vcc.com/test2026/static/sec06_p1_icon3.png">
                     <div class="sec06_p1_texts">
                         <p class="sec06_p1_t1">AI 가치관과 <br class="sec06_p1br">시장 방향성</p>
                         <p class="sec06_p1_t2">가장 중요한 세 가지 투자 트렌드는 대격변의 시기를 맞이 하였습니다. 먼저 아는 전문가만이 선점합니다.</p>
@@ -244,7 +292,7 @@
 
 <div class="sec07">
     <div class="sec07_frame">
-        <div class="sec07_back"><img src="/test2026/static/sec07_back.jpg"></div>
+        <div class="sec07_back"><img src="https://richdivine-vcc.com/test2026/static/sec07_back.jpg"></div>
         <div class="sec07_text">
             <p class="sec07_t1"><span class="span_grad1">VCC for Professional</span></p>
             <p class="sec07_t2">오직 전문직분들만을 위한 컨퍼런스</p>
@@ -260,14 +308,114 @@
 
 
 
+<!-- sec08 강사소개 -->
+
+<div class="sec08">
+    <div class="sec08_frame">
+        <p class="sec08_title">전&nbsp;분야의&nbsp;믿을&nbsp;수&nbsp;있는 국가대표&nbsp;스피커</p>
 
 
+        <div class="sec08_part sec08_part_solo">
+            <p class="sec08_part_title">VCC MC</p>
+
+            <div class="sec08_items">
+                <div class="sec08_item">
+                    <div class="sec08_texts">
+                        <p class="sec08_t1">김희연 회계사</p>
+                        <p class="sec08_t2">- 디자인택스 대표회계사<br>- 유튜브 구독자 20만명 보유</p>
+                        <p class="sec08_t3">고객을 찾는 전문직이 아닌<br>고객이 찾아오는 전문직이 되는 방법<br>전문직 마케팅의 정수를 공개합니다</p>
+                    </div>
+                    <div class="sec08_img"><img src="https://richdivine-vcc.com/test2026/static/sec08_img4-1.png"></div>
+                </div>
+            </div>
+        </div>
 
 
+        <div class="sec08_part">
+            <p class="sec08_part_title">1부 STAGE</p>
 
+            <div class="sec08_items">
+                <div class="sec08_item">
+                    <div class="sec08_texts">
+                        <p class="sec08_t1">김희연 회계사</p>
+                        <p class="sec08_t2">- 디자인택스 대표회계사<br>- 유튜브 구독자 20만명 보유</p>
+                        <p class="sec08_t3">고객을 찾는 전문직이 아닌<br>고객이 찾아오는 전문직이 되는 방법<br>전문직 마케팅의 정수를 공개합니다</p>
+                    </div>
+                    <div class="sec08_img"><img src="https://richdivine-vcc.com/test2026/static/sec08_img1-1.png"></div>
+                </div>
+                <div class="sec08_item">
+                    <div class="sec08_texts">
+                        <p class="sec08_t1">김희연 회계사</p>
+                        <p class="sec08_t2">- 디자인택스 대표회계사<br>- 유튜브 구독자 20만명 보유</p>
+                        <p class="sec08_t3">고객을 찾는 전문직이 아닌<br>고객이 찾아오는 전문직이 되는 방법<br>전문직 마케팅의 정수를 공개합니다</p>
+                    </div>
+                    <div class="sec08_img"><img src="https://richdivine-vcc.com/test2026/static/sec08_img1-2.png"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sec08_part">
+            <p class="sec08_part_title">1부 STAGE</p>
 
-<div style="width:100%; background-color:black; padding:200px 100px; height:1000px;">
-    <p style="color:white; font-size:24px;">sec08 강사소개</p>
+            <div class="sec08_items">
+                <div class="sec08_item">
+                    <div class="sec08_texts">
+                        <p class="sec08_t1">김희연 회계사</p>
+                        <p class="sec08_t2">- 디자인택스 대표회계사<br>- 유튜브 구독자 20만명 보유</p>
+                        <p class="sec08_t3">고객을 찾는 전문직이 아닌<br>고객이 찾아오는 전문직이 되는 방법<br>전문직 마케팅의 정수를 공개합니다</p>
+                    </div>
+                    <div class="sec08_img"><img src="https://richdivine-vcc.com/test2026/static/sec08_img2-1.png"></div>
+                </div>
+                <div class="sec08_item">
+                    <div class="sec08_texts">
+                        <p class="sec08_t1">김희연 회계사</p>
+                        <p class="sec08_t2">- 디자인택스 대표회계사<br>- 유튜브 구독자 20만명 보유</p>
+                        <p class="sec08_t3">고객을 찾는 전문직이 아닌<br>고객이 찾아오는 전문직이 되는 방법<br>전문직 마케팅의 정수를 공개합니다</p>
+                    </div>
+                    <div class="sec08_img"><img src="https://richdivine-vcc.com/test2026/static/sec08_img2-2.png"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sec08_part">
+            <p class="sec08_part_title">1부 STAGE</p>
+
+            <div class="sec08_items">
+                <div class="sec08_item">
+                    <div class="sec08_texts">
+                        <p class="sec08_t1">김희연 회계사</p>
+                        <p class="sec08_t2">- 디자인택스 대표회계사<br>- 유튜브 구독자 20만명 보유</p>
+                        <p class="sec08_t3">고객을 찾는 전문직이 아닌<br>고객이 찾아오는 전문직이 되는 방법<br>전문직 마케팅의 정수를 공개합니다</p>
+                    </div>
+                    <div class="sec08_img"><img src="https://richdivine-vcc.com/test2026/static/sec08_img3-1.png"></div>
+                </div>
+                <div class="sec08_item">
+                    <div class="sec08_texts">
+                        <p class="sec08_t1">김희연 회계사</p>
+                        <p class="sec08_t2">- 디자인택스 대표회계사<br>- 유튜브 구독자 20만명 보유</p>
+                        <p class="sec08_t3">고객을 찾는 전문직이 아닌<br>고객이 찾아오는 전문직이 되는 방법<br>전문직 마케팅의 정수를 공개합니다</p>
+                    </div>
+                    <div class="sec08_img"><img src="https://richdivine-vcc.com/test2026/static/sec08_img3-2.png"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sec08_part sec08_part_solo">
+            <p class="sec08_part_title">4부 STAGE</p>
+
+            <div class="sec08_items">
+                <div class="sec08_item">
+                    <div class="sec08_texts">
+                        <p class="sec08_t1">김희연 회계사</p>
+                        <p class="sec08_t2">- 디자인택스 대표회계사<br>- 유튜브 구독자 20만명 보유</p>
+                        <p class="sec08_t3">고객을 찾는 전문직이 아닌<br>고객이 찾아오는 전문직이 되는 방법<br>전문직 마케팅의 정수를 공개합니다</p>
+                    </div>
+                    <div class="sec08_img"><img src="https://richdivine-vcc.com/test2026/static/sec08_img4-1.png"></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
 </div>
 
 
@@ -277,68 +425,68 @@
 
 
 <!-- sec09 로고스트림 -->
-<div class="sec09" style="background-image: url('/test2026/static/sec09_back.png');">
+<div class="sec09" style="background-image: url('https://richdivine-vcc.com/test2026/static/sec09_back.png');">
     <div class="sec09_frame">
         <p class="sec09_title">대한민국&nbsp;전문직들을&nbsp;위한 VCC&nbsp;<span class="span_grad1">Sponsor</span></p>
 
         <div class="sec09_stream_right">
             <div class="sec09_line">
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo1.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo2.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo3.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo4.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo1.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo2.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo3.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo4.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo1.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo2.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo3.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo4.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo1.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo2.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo3.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo4.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo1.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo2.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo3.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo4.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo1.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo2.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo3.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo4.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo1.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo2.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo3.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo4.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo1.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo2.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo3.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo4.png"></div>
             </div>
         </div>
         <div class="sec09_stream_left">
             <div class="sec09_line">
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo1.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo2.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo3.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo4.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo1.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo2.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo3.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo4.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo1.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo2.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo3.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo4.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo1.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo2.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo3.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo4.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo1.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo2.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo3.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo4.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo1.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo2.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo3.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo4.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo1.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo2.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo3.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo4.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo1.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo2.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo3.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo4.png"></div>
             </div>
         </div>
         <div class="sec09_stream_right">
             <div class="sec09_line">
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo1.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo2.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo3.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo4.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo1.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo2.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo3.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo4.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo1.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo2.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo3.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo4.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo1.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo2.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo3.png"></div>
-                <div class="sec09_item"><img src="/test2026/static/sec09_logo4.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo1.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo2.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo3.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo4.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo1.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo2.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo3.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo4.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo1.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo2.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo3.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo4.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo1.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo2.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo3.png"></div>
+                <div class="sec09_item"><img src="https://richdivine-vcc.com/test2026/static/sec09_logo4.png"></div>
             </div>
         </div>
 
@@ -362,7 +510,7 @@
     <div class="sec10_frame">
 
         <div class="sec10_title">
-            <img src="/test2026/static/logo.png">
+            <img src="https://richdivine-vcc.com/test2026/static/logo.png">
             <p>Program</p>
         </div>
 
@@ -384,7 +532,7 @@
                                 <p class="sec10_bar_name">김희연 회계사</p>
                             </div>
                             <div class="sec10_bar_right">
-                                <img src="/test2026/static/sec10_logo1.png">
+                                <img src="https://richdivine-vcc.com/test2026/static/sec10_logo1.png">
                             </div>
                         </div>
                     </div>
@@ -399,7 +547,7 @@
                                 <p class="sec10_bar_name">김희연 회계사</p>
                             </div>
                             <div class="sec10_bar_right">
-                                <img src="/test2026/static/sec10_logo1.png">
+                                <img src="https://richdivine-vcc.com/test2026/static/sec10_logo1.png">
                             </div>
                         </div>
                     </div>
@@ -413,7 +561,7 @@
                                 <p class="sec10_bar_title">전문직 인플루언서 생존기</p>
                             </div>
                             <div class="sec10_bar_right">
-                                <img src="/test2026/static/sec10_logo1.png">
+                                <img src="https://richdivine-vcc.com/test2026/static/sec10_logo1.png">
                             </div>
                         </div>
                     </div>
@@ -438,7 +586,7 @@
                                 <p class="sec10_bar_name">김희연 회계사</p>
                             </div>
                             <div class="sec10_bar_right">
-                                <img src="/test2026/static/sec10_logo1.png">
+                                <img src="https://richdivine-vcc.com/test2026/static/sec10_logo1.png">
                             </div>
                         </div>
                     </div>
@@ -453,7 +601,7 @@
                                 <p class="sec10_bar_name">김희연 회계사</p>
                             </div>
                             <div class="sec10_bar_right">
-                                <img src="/test2026/static/sec10_logo1.png">
+                                <img src="https://richdivine-vcc.com/test2026/static/sec10_logo1.png">
                             </div>
                         </div>
                     </div>
@@ -467,7 +615,7 @@
                                 <p class="sec10_bar_title">전문직 인플루언서 생존기</p>
                             </div>
                             <div class="sec10_bar_right">
-                                <img src="/test2026/static/sec10_logo1.png">
+                                <img src="https://richdivine-vcc.com/test2026/static/sec10_logo1.png">
                             </div>
                         </div>
                     </div>
@@ -492,7 +640,7 @@
                                 <p class="sec10_bar_name">김희연 회계사</p>
                             </div>
                             <div class="sec10_bar_right">
-                                <img src="/test2026/static/sec10_logo1.png">
+                                <img src="https://richdivine-vcc.com/test2026/static/sec10_logo1.png">
                             </div>
                         </div>
                     </div>
@@ -507,7 +655,7 @@
                                 <p class="sec10_bar_name">김희연 회계사</p>
                             </div>
                             <div class="sec10_bar_right">
-                                <img src="/test2026/static/sec10_logo1.png">
+                                <img src="https://richdivine-vcc.com/test2026/static/sec10_logo1.png">
                             </div>
                         </div>
                     </div>
@@ -521,7 +669,7 @@
                                 <p class="sec10_bar_title">전문직 인플루언서 생존기</p>
                             </div>
                             <div class="sec10_bar_right">
-                                <img src="/test2026/static/sec10_logo1.png">
+                                <img src="https://richdivine-vcc.com/test2026/static/sec10_logo1.png">
                             </div>
                         </div>
                     </div>
@@ -547,27 +695,27 @@
                    loop 
                    playsinline
                    
-                   data-poster-1="/test2026/static/poster_1.jpg"
-                   data-webm-1="/test2026/static/video_1.webm"
-                   data-mp4-1="/test2026/static/sec04_vid.mp4"
+                   data-poster-1="https://richdivine-vcc.com/test2026/static/poster_1.jpg"
+                   data-webm-1="https://richdivine-vcc.com/test2026/static/video_1.webm"
+                   data-mp4-1="https://richdivine-vcc.com/test2026/static/sec04_vid.mp4"
                    
-                   data-poster-2="/test2026/static/poster_2.jpg"
-                   data-webm-2="/test2026/static/video_2.webm"
-                   data-mp4-2="/test2026/static/sec04_vid.mp4"
+                   data-poster-2="https://richdivine-vcc.com/test2026/static/poster_2.jpg"
+                   data-webm-2="https://richdivine-vcc.com/test2026/static/video_2.webm"
+                   data-mp4-2="https://richdivine-vcc.com/test2026/static/sec04_vid.mp4"
 
-                   data-poster-3="/test2026/static/poster_3.jpg"
-                   data-webm-3="/test2026/static/video_3.webm"
-                   data-mp4-3="/test2026/static/sec04_vid.mp4"
+                   data-poster-3="https://richdivine-vcc.com/test2026/static/poster_3.jpg"
+                   data-webm-3="https://richdivine-vcc.com/test2026/static/video_3.webm"
+                   data-mp4-3="https://richdivine-vcc.com/test2026/static/sec04_vid.mp4"
 
-                   data-poster-4="/test2026/static/poster_4.jpg"
-                   data-webm-4="/test2026/static/video_4.webm"
-                   data-mp4-4="/test2026/static/sec04_vid.mp4"
+                   data-poster-4="https://richdivine-vcc.com/test2026/static/poster_4.jpg"
+                   data-webm-4="https://richdivine-vcc.com/test2026/static/video_4.webm"
+                   data-mp4-4="https://richdivine-vcc.com/test2026/static/sec04_vid.mp4"
             </video>
         </div>
     
         <!-- 내용 영역 -->
         <div class="sec11_content">
-            <img src="/test2026/static/logo.png">
+            <img src="https://richdivine-vcc.com/test2026/static/logo.png">
             <a>Into <span class="span_grad1">VCC</span> Wave</a>
         </div>
 
@@ -608,8 +756,8 @@
         </div>
         
         <div class="sec12_map">
-            <img id="sec12_img1" class="" src="/test2026/static/sec12_img1.png">
-            <img id="sec12_img2" class="hidden" src="/test2026/static/sec12_img2.png">
+            <img id="sec12_img1" class="" src="https://richdivine-vcc.com/test2026/static/sec12_img1.png">
+            <img id="sec12_img2" class="hidden" src="https://richdivine-vcc.com/test2026/static/sec12_img2.png">
         </div>
 
         <div class="sec12_description">
@@ -687,7 +835,7 @@
 
 
 <!-- sec14 타이머 -->
-<div class="sec14 sec14_1" style="background-image: url('/test2026/static/sec14_back.png');">
+<div class="sec14 sec14_1" style="background-image: url('https://richdivine-vcc.com/test2026/static/sec14_back.png');">
     <div class="sec14_frame">
         <p id="sec14_time_1" class="sec14_time">33:22:11:44</p>
         <p id="sec14_day_1" class="sec14_day">참가신청 D-33</p>
@@ -697,7 +845,7 @@
 </div>
 
 
-<div class="sec14 sec14_2" style="background-image: url('/test2026/static/sec14_back.png');">
+<div class="sec14 sec14_2" style="background-image: url('https://richdivine-vcc.com/test2026/static/sec14_back.png');">
     <div class="sec14_frame">
         <p id="sec14_time_2" class="sec14_time">33:22:11:44</p>
         <p id="sec14_day_2" class="sec14_day">D-33</p>
@@ -716,10 +864,10 @@
 
 <!-- sec15 문의하기 -->
 <div class="sec15">
-    <div class="sec15_back"><img src="/test2026/static/sec15_back.jpg"></div>
+    <div class="sec15_back"><img src="https://richdivine-vcc.com/test2026/static/sec15_back.jpg"></div>
     <div class="sec15_frame">
         <div class="sec15_content">
-            <img src="/test2026/static/logo.png">
+            <img src="https://richdivine-vcc.com/test2026/static/logo.png">
             <p>컨퍼런스 문의 채널</p>
         </div>
         <a href="https://www.naver.com">문의하기</a>
@@ -736,17 +884,17 @@
     <div class="sec16_frame">
         <div class="sec16_title">
             <span class="sec16_t1">지난 </span>
-            <img class="sec16_ti" src="/test2026/static/logo.png">
+            <img class="sec16_ti" src="https://richdivine-vcc.com/test2026/static/logo.png">
             <span class="sec16_t2">다시보기</span>
         </div>
         <div class="sec16_cardset">
-            <div onclick="sec16click(0);" class="sec16_card" style="background-image: url('/test2026/static/sec16_card1.jpg');">
+            <div onclick="sec16click(0);" class="sec16_card" style="background-image: url('https://richdivine-vcc.com/test2026/static/sec16_card1.jpg');">
                 <p>2023&nbsp;VCC 다시보기</p>
             </div>
-            <div onclick="sec16click(1);" class="sec16_card" style="background-image: url('/test2026/static/sec16_card1.jpg');">
+            <div onclick="sec16click(1);" class="sec16_card" style="background-image: url('https://richdivine-vcc.com/test2026/static/sec16_card1.jpg');">
                 <p>2024&nbsp;VCC 다시보기</p>
             </div>
-            <div onclick="sec16click(2);" class="sec16_card" style="background-image: url('/test2026/static/sec16_card1.jpg');">
+            <div onclick="sec16click(2);" class="sec16_card" style="background-image: url('https://richdivine-vcc.com/test2026/static/sec16_card1.jpg');">
                 <p>2025&nbsp;VCC 다시보기</p>
             </div>
         </div>
@@ -760,11 +908,11 @@
         <p id="sec16_m_title" class="sec16_m_title">ㅁㅁㅁㅁㅁ</p>
         <div class="sec16_m_buttons">
             <a id="sec16_youtube" class="sec16_m_button">
-                <img src="/test2026/static/sec16_youtube.png">
+                <img src="https://richdivine-vcc.com/test2026/static/sec16_youtube.png">
                 <p>유튜브 영상 보러가기</p>
             </a>
             <a id="sec16_webpage" class="sec16_m_button">
-                <img src="/test2026/static/sec16_webpage.png">
+                <img src="https://richdivine-vcc.com/test2026/static/sec16_webpage.png">
                 <p>소개 페이지 보러가기</p>
             </a>
         </div>
@@ -778,7 +926,7 @@
 <!-- sec17 footer -->
 <div class="sec17">
     <div class="sec17_frame">
-        <div class="sec17_img"><img src="/test2026/static/logo.png"></div>
+        <div class="sec17_img"><img src="https://richdivine-vcc.com/test2026/static/logo.png"></div>
         <div class="sec17_text">
             <p>주소 서울시 강남구 인터콘티넨탈 B2 스파크플러스</p>
             <p>이메일 mail@richdivine.co.kr</p>
@@ -806,6 +954,6 @@
 
 
 
-    <script src="/test2026/static/script.js"></script>
+    <script src="https://richdivine-vcc.com/test2026/static/script.js?v10"></script>
 </body>
 </html>
