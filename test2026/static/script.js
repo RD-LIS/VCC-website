@@ -2,6 +2,118 @@
 
 
 
+// =========================================================================================================
+// sec01 관련
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    gsap.registerPlugin(ScrollTrigger);     // GSAP 플러그인 등록
+
+    // ==========================================
+    // 1. 화면폭 구간별 설정 (원하는 만큼 추가/수정 가능)
+    // - minWidth: 해당 구간이 시작되는 최소 화면 폭 (px)
+    // - 배열은 minWidth 기준으로 내림차순(큰 값 -> 작은 값) 정렬되어 적용됩니다.
+    // ==========================================
+    const BREAKPOINTS = [
+        {
+            minWidth: 1024,
+            videoSrc: "./static/sec01_vid1.mp4",
+            frameHeight: "600vh"
+        },
+        {
+            minWidth: 0,
+            videoSrc: "./static/sec01_vid2.mp4",
+            frameHeight: "300vh"
+        }
+    ];
+
+    const frameEl = document.querySelector(".sec01_frame");
+    const videoEl = document.getElementById("sec01_video");
+    let currentActiveIndex = -1; // 현재 활성화된 브레이크포인트 인덱스
+    let scrollTriggerInstance = null;
+
+    // ==========================================
+    // 2. 현재 화면 폭에 맞는 설정 탐색 함수
+    // ==========================================
+    function getActiveConfig() {
+        const windowWidth = window.innerWidth;
+        
+        // minWidth가 큰 순서대로 정렬 후 조건에 맞는 첫 번째 항목 반환
+        const sorted = [...BREAKPOINTS].sort((a, b) => b.minWidth - a.minWidth);
+        const index = sorted.findIndex(item => windowWidth >= item.minWidth);
+
+        return {
+            config: index !== -1 ? sorted[index] : sorted[sorted.length - 1],
+            index: index !== -1 ? index : sorted.length - 1
+        };
+    }
+
+    // ==========================================
+    // 3. 스크롤 & 비디오 동기화 설정 함수
+    // ==========================================
+    function setupVideoScroll() {
+        const { config, index } = getActiveConfig();
+
+        // 기존과 같은 구간이라면 재설정하지 않음 (중복 연산 및 비디오 재로드 방지)
+        if (currentActiveIndex === index) return;
+        currentActiveIndex = index;
+
+        // 1) frame height 설정 (스크롤 길이에 따른 재생 속도 조절)
+        frameEl.style.height = config.frameHeight;
+
+        // 2) 비디오 소스 교체
+        if (videoEl.getAttribute("src") !== config.videoSrc) {
+            videoEl.src = config.videoSrc;
+            videoEl.load();
+        }
+
+        // 3) 기존 ScrollTrigger 제거
+        if (scrollTriggerInstance) {
+            scrollTriggerInstance.kill();
+        }
+
+        // 4) GSAP ScrollTrigger 생성
+        const initGSAP = () => {
+            scrollTriggerInstance = ScrollTrigger.create({
+                trigger: ".sec01_frame",
+                start: "top top",
+                end: "bottom bottom",
+                scrub: 0.1, // 스크롤 감도 (0.1 ~ 0.5 권장)
+                onUpdate: (self) => {
+                    if (videoEl.duration) {
+                        videoEl.currentTime = videoEl.duration * self.progress;
+                    }
+                }
+            });
+        };
+
+        // 메타데이터 로드 상태 체크 후 바인딩
+        if (videoEl.readyState >= 1) {
+            initGSAP();
+        } else {
+            videoEl.onloadedmetadata = initGSAP;
+        }
+    }
+
+    // 초기 실행
+    setupVideoScroll();
+
+    // 화면 리사이즈 시 대응 (디바운싱 처리)
+    let resizeTimer;
+    window.addEventListener("resize", () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+            setupVideoScroll();
+            ScrollTrigger.refresh();
+        }, 200);
+    });
+});
+
+
+
+
+
+
 
 // =========================================================================================================
 // sec03 관련

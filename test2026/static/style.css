@@ -21,6 +21,93 @@
 
 
 
+
+
+
+/* ============================================================================================================================================ */
+/* sec00 fixed */
+
+.sec00_buttons{ position:fixed; right:30px; bottom:30px; z-index:100; display:flex; flex-direction: column; gap:10px; }
+.sec00_button1{
+    display: flex; justify-content: center; align-items: center;
+    text-decoration: none;
+    border-radius:200px; background-color:#61CFFF; color:#1F1F1F; font-size:20px; font-weight:900;
+    width:80px; height:80px;
+}
+.sec00_button2{
+    display: flex; justify-content: center; align-items: center;
+    text-decoration: none;
+    border-radius:200px; background-color:#1F1F1F; color:#61CFFF; font-size:20px; font-weight:900;
+    width:80px; height:80px;
+}
+
+
+
+
+
+/* ============================================================================================================================================ */
+/* sec01 스크롤 영상 */
+
+
+.sec01 { width: 100%; }
+.sec01_frame { width: 100%; position: relative; }
+
+.sec01_sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.sec01_videos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+#sec01_video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.sec01_contents {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    pointer-events: none;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sec01_contents > * {
+    pointer-events: auto;
+}
+
+
+
+
+
+
+/* ============================================================================================================================================ */
+/* sec02 세 장 뽑기 */
+
+
+
+
+
+
+
+
+
+
 /* ============================================================================================================================================ */
 /* sec03 제목과영상 */
 
@@ -578,6 +665,147 @@
     .sec07_t2 { font-size: 18px; margin-bottom: 20px; }
     .sec07_t3 { font-size: 18px; }
 }
+
+
+
+
+
+
+
+
+
+
+/* ============================================================================================================================================ */
+/* sec08 강사소개 */
+
+.sec08{ width:100%; background-color:black; padding:150px 20px; }
+.sec08_frame{ width:1200px; margin:0 auto; }
+.sec08_title{ font-size:60px; font-weight:700; color:white; text-align:center; margin-bottom:70px; }
+
+.sec08_part{ margin-bottom:50px; }
+.sec08_part_title{ font-size:20px; font-weight:600; color:#44F4F4; text-align:center; margin-bottom:30px; }
+
+.sec08_items{ display:flex; gap:20px; }
+.sec08_item{
+    flex:1;
+    display:flex; justify-content: space-between;
+    border-radius:24px;
+    background: linear-gradient(
+        to bottom,
+        #4120F9 0%,
+        #4482E3 50%,
+        #509ACF 100%
+    );
+}
+.sec08_texts{ padding:40px 0 0 40px; }
+.sec08_t1{ font-size:32px; font-weight:700; color:white; line-height:1.1; margin-bottom:10px; }
+.sec08_t2{ font-size:18px; font-weight:500; color:white; line-height:1.3; margin-bottom:24px; }
+.sec08_t3{ font-size:18px; font-weight:500; color:white; line-height:1.3; opacity:0.9; }
+.sec08_img{ position:relative; overflow:hidden; width:230px; height:360px; }
+.sec08_img img{ position:absolute; width:220px; bottom:-5px; }
+
+.sec08_part_solo .sec08_texts{ padding:40px 0 0 160px; }
+.sec08_part_solo .sec08_img{ width:430px; }
+
+@media (max-width: 1300px) {
+    .sec08_frame{ width:96%; }
+    .sec08_title{ font-size:48px; margin-bottom:54px; }
+    
+    .sec08_part{ margin-bottom:40px; }
+    .sec08_part_title{ font-size:20px; margin-bottom:20px; }
+    
+    .sec08_items{ gap:14px; }
+    .sec08_item{ border-radius:20px; }
+    .sec08_texts{ padding:28px 0 0 28px; }
+    .sec08_t1{ font-size:28px; margin-bottom:10px; }
+    .sec08_t2{ font-size:16px; margin-bottom:24px; }
+    .sec08_t3{ font-size:16px; }
+    .sec08_img{ width:200px; height:320px; }
+    .sec08_img img{ width:190px; bottom:-5px; }
+
+    .sec08_part_solo .sec08_texts{ padding:28px 0 0 140px; }
+    .sec08_part_solo .sec08_img{ width:430px; }
+}
+@media (max-width: 1000px) {
+    .sec08_frame{ width:100%; }
+    .sec08_title{ font-size:36px; margin-bottom:44px; }
+    
+    .sec08_part{ margin-bottom:40px; }
+    .sec08_part_title{ font-size:20px; margin-bottom:20px; }
+    
+    .sec08_items{ gap:10px; }
+    .sec08_item{ border-radius:20px; }
+    .sec08_texts{ padding:20px 0 0 20px; }
+    .sec08_t1{ font-size:24px; margin-bottom:10px; }
+    .sec08_t2{ font-size:14px; margin-bottom:24px; }
+    .sec08_t3{ font-size:14px; }
+    .sec08_img{ width:140px; height:220px; }
+    .sec08_img img{ width:130px; bottom:-5px; }
+
+    .sec08_part_solo .sec08_texts{ padding:20px 0 0 100px; }
+    .sec08_part_solo .sec08_img{ width:260px; }
+}
+@media (max-width: 768px) {
+    .sec08_title{ font-size:32px; margin-bottom:44px; }
+    
+    .sec08_items{ gap:10px; flex-direction: column; }
+    .sec08_item{ border-radius:20px; flex-direction: row-reverse; justify-content: center; }
+    .sec08_texts{ padding:20px 0 0 20px; margin-left:60px; }
+    .sec08_img{ width:140px; height:220px; }
+    .sec08_img img{ width:130px; bottom:-5px; }
+
+    .sec08_part_solo .sec08_texts{ padding:20px 0 0 20px; }
+    .sec08_part_solo .sec08_img{ width:140px; }
+}
+@media (max-width: 600px) {
+
+    .sec08_title{ font-size:28px; margin-bottom:36px; }
+    
+    .sec08_part{ margin-bottom:40px; }
+    .sec08_part_title{ font-size:20px; margin-bottom:16px; }
+
+    .sec08_items{ gap:10px; }
+    .sec08_item{ border-radius:20px; }
+
+    .sec08_texts{ padding:20px 0 0; margin-left:40px; }
+    .sec08_t1{ font-size:22px; margin-bottom:8px; }
+    .sec08_t2{ font-size:14px; margin-bottom:16px; }
+    .sec08_t3{ font-size:14px; }
+    .sec08_img{ width:140px; height:180px; }
+    .sec08_img img{ width:130px; bottom:-30px; }
+
+    .sec08_part_solo .sec08_texts{ padding:20px 0 0; }
+    .sec08_part_solo .sec08_img{ width:140px; }
+}
+@media (max-width: 480px) {
+    .sec08{ padding:80px 8px; }
+
+    .sec08_title{ font-size:24px; margin-bottom:36px; }
+    
+    .sec08_part{ margin-bottom:40px; }
+    .sec08_part_title{ font-size:18px; margin-bottom:16px; }
+
+    .sec08_items{ gap:10px; }
+    .sec08_item{ border-radius:20px; }
+
+    .sec08_texts{ padding:16px 0 0; margin-left:10px; }
+    .sec08_t1{ font-size:18px; margin-bottom:6px; }
+    .sec08_t2{ font-size:13px; margin-bottom:12px; }
+    .sec08_t3{ font-size:13px; }
+    .sec08_img{ width:120px; height:150px; }
+    .sec08_img img{ width:110px; bottom:-50px; }
+
+    .sec08_part_solo .sec08_texts{ padding:16px 0 0; }
+    .sec08_part_solo .sec08_img{ width:120px; }
+}
+@media (max-width: 360px) {
+    .sec08_texts{ padding:10px 0 0; margin-left:4px; }
+    .sec08_t1{ font-size:16px; margin-bottom:4px; }
+    .sec08_t2{ font-size:12x; margin-bottom:8px; }
+    .sec08_t3{ font-size:12px; }
+}
+
+
 
 
 
