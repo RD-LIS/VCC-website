@@ -1,0 +1,154 @@
+.sec88 {
+    width: 100%;
+}
+
+.sec88_frame {
+    margin: 0;
+    padding: 0;
+    background: #030308;
+    height: 150vh;
+}
+
+.sec88_wrap {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* 컨테이너 div 설정 (100vw -> 100%로 수정하여 모바일 스크롤바 렉 방지) */
+#sec88_lucky {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #030308;
+}
+
+#sec88_lucky canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#luckyTitle {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%) translateY(16px);
+    z-index: 10;
+    text-align: center;
+    pointer-events: none;
+    width: 90%;
+    max-width: 600px;
+    font-family: "Pretendard Variable", Pretendard, sans-serif;
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+}
+#luckyTitle.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.lucky-heading {
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    text-shadow: 0 0 24px rgba(90, 120, 255, 0.55);
+}
+.lucky-heading .accent {
+    color: #44f4f4;
+}
+.lucky-sub {
+    margin-top: 14px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
+    word-break: keep-all;
+}
+
+#swipeHint {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    pointer-events: none;
+    text-align: center;
+    font-family: "Pretendard Variable", Pretendard, sans-serif;
+    color: rgba(255, 255, 255, 0.65);
+    transition: opacity 0.4s;
+}
+#swipeHint.hidden {
+    opacity: 0;
+}
+
+.swipe-track {
+    position: relative;
+    width: 140px;
+    height: 26px;
+    margin: 0 auto 6px;
+}
+.swipe-dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 12px 4px rgba(160, 190, 255, 0.55);
+    animation: swipeSlide 2.2s ease-in-out infinite;
+    will-change: transform; /* 모바일 하드웨어 가속 최적화 */
+}
+@keyframes swipeSlide {
+    0%   { transform: translate(-50%,-50%) translateX(-46px); }
+    50%  { transform: translate(-50%,-50%) translateX(46px); }
+    100% { transform: translate(-50%,-50%) translateX(-46px); }
+}
+.chev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-54%);
+    font-size: 20px;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.5);
+    animation: chevPulse 2.2s ease-in-out infinite;
+    will-change: opacity;
+}
+.chev.left { left: 0; }
+.chev.right { right: 0; animation-delay: 1.1s; }
+@keyframes chevPulse {
+    0%, 100% { opacity: 0.9; }
+    50% { opacity: 0.25; }
+}
+.swipe-text {
+    font-size: 13px;
+    letter-spacing: 0.05em;
+}
+
+@media (max-width: 1024px) {
+    #luckyTitle { top: 50px; }
+    .lucky-heading { font-size: 32px; }
+    .lucky-sub { font-size: 14px; }
+    .swipe-text { font-size: 12px; }
+}
+
+@media (max-width: 768px) {
+    #luckyTitle { top: 50px; width: 92%; }
+    .lucky-heading { font-size: 26px; }
+    .lucky-sub { font-size: 13px; line-height: 1.5; }
+    #swipeHint { bottom: 20px; }
+    .swipe-track { width: 120px; }
+    .swipe-text { font-size: 11px; }
+}
+
+@media (max-width: 480px) {
+    #luckyTitle { top: 40px; }
+    .lucky-heading { font-size: 22px; }
+    .lucky-sub { font-size: 12px; }
+}
