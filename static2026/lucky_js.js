@@ -28,7 +28,7 @@ function getResponsiveConfig() {
 const IMG_BASE = 'https://richdivine-vcc.com/static2026/';
 const IMAGE_URLS = [
     'sec88_img1r.png', 'sec88_img2r.png', 'sec88_img3r.png',
-    'sec88_img4r.png', 'sec88_img5r.png', 'sec88_img6r.png', 'sec88_img7r.png',
+    'sec88_img4r.png', 'sec88_img5r.png', 'sec88_img6r.png', 'sec88_img7rr.png',
 ].map(n => IMG_BASE + n);
 
 const container = document.getElementById('sec88_lucky');
