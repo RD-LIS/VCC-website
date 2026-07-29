@@ -596,30 +596,30 @@ html{max-width:1920px;}
 
 .sec05_t1 { font-size: 54px; margin-bottom:20px; font-weight: 700; }
 .sec05_t2 { font-size: 36px; margin-bottom:40px; font-weight: 600; }
-.sec05_t3 { font-size: 16px; margin-bottom:10px; opacity: 0.9; }
-.sec05_t4 { font-size: 16px; margin-bottom:10px; opacity: 0.9; }
+.sec05_t3 { font-size: 22px; margin-bottom:10px; opacity: 0.9; }
+.sec05_t4 { font-size: 22px; margin-bottom:10px; opacity: 0.9; }
 .sec05_t5 { font-size: 16px; margin-bottom:0px; opacity: 0.9; }
 
 @media (max-width: 1200px) {
     .sec05_t1 { font-size: 40px; }
     .sec05_t2 { font-size: 26px; }
-    .sec05_t3 { font-size: 16px; }
-    .sec05_t4 { font-size: 16px; }
+    .sec05_t3 { font-size: 22px; }
+    .sec05_t4 { font-size: 22px; }
     .sec05_t5 { font-size: 16px; }
 }
 @media (max-width: 768px) {
     .sec05 { min-height: 500px; }
     .sec05_t1 { font-size: 32px; }
     .sec05_t2 { font-size: 18px; }
-    .sec05_t3 { font-size: 15px; }
-    .sec05_t4 { font-size: 15px; }
+    .sec05_t3 { font-size: 16px; }
+    .sec05_t4 { font-size: 16px; }
     .sec05_t5 { font-size: 15px; }
 }
 @media (max-width: 500px) {
     .sec05_t1 { font-size: 24px; }
     .sec05_t2 { font-size: 16px; }
-    .sec05_t3 { font-size: 14px; }
-    .sec05_t4 { font-size: 14px; }
+    .sec05_t3 { font-size: 15px; }
+    .sec05_t4 { font-size: 15px; }
     .sec05_t5 { font-size: 14px; }
 }
 
@@ -772,21 +772,21 @@ html{max-width:1920px;}
     margin-bottom: 36px;
 }
 .sec07_t3 {
-    font-size: 32px;
+    font-size: 26px;
     line-height: 1.6;
 }
 
 @media (max-width: 1100px) {
     .sec07_t1 { font-size: 48px; margin-bottom: 36px; }
     .sec07_t2 { font-size: 26px; margin-bottom: 36px; }
-    .sec07_t3 { font-size: 26px; }
+    .sec07_t3 { font-size: 24px; }
 }
 
 @media (max-width: 768px) {
     .sec07_frame { padding: 220px 0; }
     .sec07_t1 { font-size: 32px; margin-bottom: 20px; }
     .sec07_t2 { font-size: 22px; margin-bottom: 20px; }
-    .sec07_t3 { font-size: 22px; }
+    .sec07_t3 { font-size: 20px; }
     .sec07_back { width: 100%; }
 }
 @media (max-width: 500px) {
