@@ -39,7 +39,7 @@ const SEC01_CONFIG = {
 
   // PC 설정 (1024px 이상)
   desktop: {
-    videoSrc: 'https://richdivine-vcc.com/static2026/sec01_vid1r.mp4',
+    videoSrc: 'https://richdivine-vcc.com/static2026/sec01_vid1rr.mp4',
     videoPoster: 'https://richdivine-vcc.com/static2026/sec01_vid1_poster.jpg',
     videoScrubHeight: 400, // 1차 스크롤 길이 (vh 단위, 예: 400vh = 화면 높이의 4배)
     cardsScrubHeight: 400, // 2차 스크롤 길이 (vh 단위)
@@ -53,7 +53,7 @@ const SEC01_CONFIG = {
 
   // 모바일 설정 (1024px 미만)
   mobile: {
-    videoSrc: 'https://richdivine-vcc.com/static2026/sec01_vid2r.mp4', // 별도 모바일용 세로 영상이 있다면 변경 가능 (없으면 원본 지정)
+    videoSrc: 'https://richdivine-vcc.com/static2026/sec01_vid2rr.mp4', // 별도 모바일용 세로 영상이 있다면 변경 가능 (없으면 원본 지정)
     videoPoster: 'https://richdivine-vcc.com/static2026/sec01_vid2_poster.jpg',
     videoScrubHeight: 350,
     cardsScrubHeight: 450,
